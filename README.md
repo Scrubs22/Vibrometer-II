@@ -1,3 +1,13 @@
 # Vibrometer-II
-A better version of my vibration monitor, which used an ATmega328-PU and two CR2032 cells, leading to an inflated size and inaccuracy. 
-This time I am implementing a much cleaner and faster Raspberry RP2040 to reduce form factor and decrease mass and inaccuracies.
+
+Vibrometer-II is an advanced, high-performance upgrade to my original vibration monitor project. 
+
+## The Evolution: Upgrading to RP2040
+
+The previous version relied on an **ATmega328-P** architecture powered by twin CR2032 cells. While functional, it suffered from a bulky form factor, increased mass, and inherent measurement inaccuracies. 
+
+To overcome these constraints, **Vibrometer-II** implements a much cleaner and faster **Raspberry Pi RP2040** core. This hardware migration achieves:
+* **Drastic Form Factor Reduction:** Minimizes overall mass and physical device footprint.
+* **Enhanced Measurement Accuracy:** Delivers faster data capture and processing speeds.
+* **Custom Enclosure:** A brand-new structural enclosure tailored explicitly for the onboard sensor.
+* **Dual-Tier UI Ecosystem:** Features advanced and basic user interfaces engineered for both high-level control and low-level system implementation.
