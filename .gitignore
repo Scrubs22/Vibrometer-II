@@ -1,0 +1,49 @@
+# =========================================================================
+# Custom Exclusions for your Project
+# =========================================================================
+# Block local editor automated history files (Fixes your current issue)
+**/.history/
+**/.git/
+
+# =========================================================================
+# CAD & PCB Design Junk (Fusion 360 / Altium / Eagle / KiCad)
+# =========================================================================
+# Ignore local structural and background session previews
+*__Previews/
+*.SchDocPreview
+*.PcbDocPreview
+*.PrjPCBStructure
+.history/
+Project Logs for*/
+Project Outputs for*/
+Generated Data/
+
+# Common ECAD / CAD Backup and Temporary files
+*.bak
+*.bck
+*.tmp
+*~
+*.log
+*.REP
+*.TLT
+*.htm
+*.000
+_autosave-*
+fp-info-cache
+Status Report.txt
+
+# =========================================================================
+# Operating System & IDE System Files
+# =========================================================================
+# Windows system files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Code Editor settings (VS Code)
+.vscode/
