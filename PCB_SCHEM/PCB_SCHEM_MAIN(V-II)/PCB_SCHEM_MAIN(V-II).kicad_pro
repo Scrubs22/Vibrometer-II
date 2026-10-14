@@ -511,6 +511,36 @@
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
+      },
+      {
+        "bus_width": 30,
+        "line_style": 0,
+        "name": "3.3V",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
+        "schematic_color": "rgb(248, 0, 0)",
+        "tuning_profile": "",
+        "wire_width": 20
+      },
+      {
+        "bus_width": 30,
+        "line_style": 0,
+        "name": "GND",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2,
+        "schematic_color": "rgb(6, 6, 6)",
+        "tuning_profile": "",
+        "wire_width": 20
+      },
+      {
+        "bus_width": 30,
+        "line_style": 0,
+        "name": "VIN ",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgb(111, 0, 3)",
+        "tuning_profile": "",
+        "wire_width": 20
       }
     ],
     "meta": {
@@ -518,7 +548,20 @@
     },
     "net_colors": null,
     "netclass_assignments": null,
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "GND",
+        "pattern": "GND"
+      },
+      {
+        "netclass": "3.3V",
+        "pattern": "/3.3V"
+      },
+      {
+        "netclass": "VIN ",
+        "pattern": "/VIN"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
@@ -661,7 +704,7 @@
         "uuid": "0aa7e137-bf3e-4eb2-8323-46b959a8f056"
       }
     ],
-    "used_designators": "U1-2",
+    "used_designators": "U1-5,D1-2,L1,BT1,J1,#FLG1-2,R1-4,Y1,C1-3,#PWR1",
     "variants": []
   },
   "sheets": [
