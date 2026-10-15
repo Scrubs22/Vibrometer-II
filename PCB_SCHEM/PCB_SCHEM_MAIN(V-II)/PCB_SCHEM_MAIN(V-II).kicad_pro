@@ -517,7 +517,7 @@
         "line_style": 0,
         "name": "3.3V",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 1,
+        "priority": 2,
         "schematic_color": "rgb(248, 0, 0)",
         "tuning_profile": "",
         "wire_width": 20
@@ -527,7 +527,7 @@
         "line_style": 0,
         "name": "GND",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 2,
+        "priority": 3,
         "schematic_color": "rgb(6, 6, 6)",
         "tuning_profile": "",
         "wire_width": 20
@@ -537,10 +537,20 @@
         "line_style": 0,
         "name": "VIN ",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 0,
+        "priority": 1,
         "schematic_color": "rgb(111, 0, 3)",
         "tuning_profile": "",
         "wire_width": 20
+      },
+      {
+        "bus_width": 40,
+        "line_style": 0,
+        "name": "{QSPI}",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgb(255, 233, 44)",
+        "tuning_profile": "",
+        "wire_width": 8
       }
     ],
     "meta": {
@@ -560,6 +570,10 @@
       {
         "netclass": "VIN ",
         "pattern": "/VIN"
+      },
+      {
+        "netclass": "{QSPI}",
+        "pattern": "QSPI"
       }
     ]
   },
@@ -663,7 +677,16 @@
       "sort_asc": true,
       "sort_field": "Reference"
     },
-    "bus_aliases": {},
+    "bus_aliases": {
+      "QSPI": [
+        "CS",
+        "SCLK",
+        "SIO0",
+        "SIO1",
+        "SIO2",
+        "SIO3"
+      ]
+    },
     "connection_grid_size": 50.0,
     "drawing": {
       "dashed_lines_dash_length_ratio": 12.0,
@@ -704,7 +727,7 @@
         "uuid": "0aa7e137-bf3e-4eb2-8323-46b959a8f056"
       }
     ],
-    "used_designators": "U1-5,D1-2,L1,BT1,J1,#FLG1-2,R1-4,Y1,C1-3,#PWR1",
+    "used_designators": "U1-5,D1-2,L1,BT1,J1,#FLG1-2,R1-7,Y1,C1-3,#PWR1",
     "variants": []
   },
   "sheets": [
