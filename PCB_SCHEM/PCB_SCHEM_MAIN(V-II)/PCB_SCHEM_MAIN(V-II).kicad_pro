@@ -69,7 +69,13 @@
           "thermal_relief_spoke_width": 0.5
         }
       },
-      "diff_pair_dimensions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
       "drc_exclusions": [],
       "meta": {
         "version": 2
@@ -140,20 +146,20 @@
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.0,
-        "min_connection": 0.0,
-        "min_copper_edge_clearance": 0.5,
+        "min_clearance": 0.15,
+        "min_connection": 0.15,
+        "min_copper_edge_clearance": 0.15,
         "min_groove_width": 0.0,
-        "min_hole_clearance": 0.25,
+        "min_hole_clearance": 0.15,
         "min_hole_to_hole": 0.25,
-        "min_microvia_diameter": 0.2,
+        "min_microvia_diameter": 0.15,
         "min_microvia_drill": 0.1,
         "min_resolved_spokes": 2,
-        "min_silk_clearance": 0.0,
+        "min_silk_clearance": 0.15,
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.2,
+        "min_track_width": 0.15,
         "min_via_annular_width": 0.1,
         "min_via_diameter": 0.5,
         "solder_mask_to_copper_clearance": 0.0,
@@ -203,7 +209,9 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [],
+      "track_widths": [
+        0.0
+      ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
           "corner_radius_percentage": 80,
@@ -230,7 +238,12 @@
           "spacing": 0.6
         }
       },
-      "via_dimensions": [],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        }
+      ],
       "zones_allow_external_fillets": false
     },
     "ipc2581": {
@@ -495,7 +508,7 @@
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.2,
+        "clearance": 0.15,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -517,27 +530,65 @@
         "line_style": 0,
         "name": "3.3V",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 2,
+        "priority": 6,
         "schematic_color": "rgb(248, 0, 0)",
         "tuning_profile": "",
         "wire_width": 20
+      },
+      {
+        "bus_width": 20,
+        "diff_pair_gap": 0.15,
+        "name": "D+",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 3,
+        "schematic_color": "rgb(249, 249, 249)",
+        "tuning_profile": "",
+        "wire_width": 6
+      },
+      {
+        "bus_width": 20,
+        "diff_pair_gap": 0.15,
+        "name": "D-",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2,
+        "schematic_color": "rgb(19, 19, 19)",
+        "tuning_profile": "",
+        "wire_width": 6
       },
       {
         "bus_width": 30,
         "line_style": 0,
         "name": "GND",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 3,
+        "priority": 7,
         "schematic_color": "rgb(6, 6, 6)",
         "tuning_profile": "",
         "wire_width": 20
+      },
+      {
+        "bus_width": 21,
+        "name": "MCU_DN",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgb(134, 177, 255)",
+        "tuning_profile": "",
+        "wire_width": 6
+      },
+      {
+        "bus_width": 20,
+        "name": "MCU_DP",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
+        "schematic_color": "rgb(207, 255, 120)",
+        "tuning_profile": "",
+        "wire_width": 6
       },
       {
         "bus_width": 30,
         "line_style": 0,
         "name": "VIN ",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 1,
+        "priority": 5,
         "schematic_color": "rgb(111, 0, 3)",
         "tuning_profile": "",
         "wire_width": 20
@@ -547,7 +598,7 @@
         "line_style": 0,
         "name": "{QSPI}",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 0,
+        "priority": 4,
         "schematic_color": "rgb(255, 233, 44)",
         "tuning_profile": "",
         "wire_width": 8
@@ -574,6 +625,22 @@
       {
         "netclass": "{QSPI}",
         "pattern": "QSPI"
+      },
+      {
+        "netclass": "D+",
+        "pattern": "*D+"
+      },
+      {
+        "netclass": "D-",
+        "pattern": "*D-"
+      },
+      {
+        "netclass": "MCU_DP",
+        "pattern": "*MCU_DP"
+      },
+      {
+        "netclass": "MCU_DN",
+        "pattern": "*MCU_DN"
       }
     ]
   },
@@ -583,7 +650,7 @@
       "netlist": "",
       "plot": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "PCB_SCHEM_MAIN(V-II).step",
       "vrml": ""
     },
     "page_layout_descr_file": ""
@@ -727,7 +794,7 @@
         "uuid": "0aa7e137-bf3e-4eb2-8323-46b959a8f056"
       }
     ],
-    "used_designators": "U1-5,D1-2,L1,BT1,J1,#FLG1-2,R1-7,Y1,C1-3,#PWR1",
+    "used_designators": "U1-5,D1-2,L1,BT1,J1,#FLG1-2,R1-9,Y1,C1-5,#PWR1,SW1",
     "variants": []
   },
   "sheets": [
