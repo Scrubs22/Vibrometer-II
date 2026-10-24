@@ -170,7 +170,7 @@
           "td_onpthpad": true,
           "td_onroundshapesonly": false,
           "td_onsmdpad": true,
-          "td_ontrackend": false,
+          "td_ontrackend": true,
           "td_onvia": true
         }
       ],
@@ -591,7 +591,7 @@
         "name": "VIN ",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 5,
-        "schematic_color": "rgb(111, 0, 3)",
+        "schematic_color": "rgb(255, 0, 7)",
         "track_width": 0.508,
         "tuning_profile": "",
         "wire_width": 20
@@ -797,7 +797,7 @@
         "uuid": "0aa7e137-bf3e-4eb2-8323-46b959a8f056"
       }
     ],
-    "used_designators": "U1-5,BT1,L1,D1-2,#FLG1-2,R1-9,J1,Y1,C1-5,#PWR1,SW1",
+    "used_designators": "U1-5,BT1,L1,D1-2,#FLG1-2,R1-9,J1,Y1,C1-5,#PWR1-15,SW1",
     "variants": []
   },
   "sheets": [
