@@ -1,7 +1,7 @@
 > ⚠️ **Status: Work in Progress (WIP)**  
 > This project is actively being developed and is currently in the development phase. The hardware schematics, 3D enclosures, and firmware files are subject to frequent changes until a complete, fully tested working prototype is validated. Use with caution!
 
-
+![Current 3D view of the Vibrometer-II](Photos/PCB_Complete_View.PNG)
 
 # Vibrometer-II
 
