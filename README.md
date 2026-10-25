@@ -13,9 +13,11 @@ To overcome these constraints, **Vibrometer-II** implements a much cleaner and f
 * **Dual-Tier UI Ecosystem:** Features advanced and basic user interfaces engineered for both high-level control and low-level system implementation.
 
 ## Technical Specifications: 
+
 The **Vibrometer-II** uses the *LSM6DS3* as its main IMU, and the *RP2040* as the MCU. For memory, two *MX25L3233FM1* each featuring 4MB or storage.
 
 ### Individual Specifications:
+
 #### LSM6DS3:
 * Manufactured by STMicrocontrollers
 * Sensor Type: 3-axis accelerometer and 3-axis gyroscope combo (6-axis IMU)
@@ -31,6 +33,7 @@ The **Vibrometer-II** uses the *LSM6DS3* as its main IMU, and the *RP2040* as th
 * Interface Options: SPI and I²C serial interfaces with a main processor data synchronization feature
 
 #### RP2040:
+
 * Manufactured by Raspberry Pi Ltd
 * Core Architecture: Dual-core ARM Cortex-M0+
 * Clock Frequency: Variable, running up to 133 MHz
@@ -46,6 +49,7 @@ The **Vibrometer-II** uses the *LSM6DS3* as its main IMU, and the *RP2040* as th
 * Package Options: 56-pin QFN package measuring 7×7 mm
 
 #### MXL25L3233FM1:
+
 * Manufacturer: Macronix International Co., Ltd.
 * Memory Type: Serial Multi-I/O (MXSMIO®) CMOS NOR Flash
 * Density / Capacity: 32 Megabits (Mbit), which translates to 4 Megabytes (MB)
