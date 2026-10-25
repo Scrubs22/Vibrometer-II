@@ -1,0 +1,18 @@
+name: PCB Visual Diff
+
+on:
+  pull_request:
+    paths:
+      - '**/*.kicad_pcb'
+
+jobs:
+  pcb-diff:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Run KiCad Diff
+        uses: sksat/kicadiff@v0.2.0
