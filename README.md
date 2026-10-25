@@ -1,3 +1,8 @@
+> ⚠️ **Status: Work in Progress (WIP)**  
+> This project is actively being developed and is currently in the development phase. The hardware schematics, 3D enclosures, and firmware files are subject to frequent changes until a complete, fully tested working prototype is validated. Use with caution!
+
+
+
 # Vibrometer-II
 
 Vibrometer-II is an advanced, high-performance upgrade to my original vibration monitor project. 
